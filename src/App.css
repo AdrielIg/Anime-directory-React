@@ -1,38 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(3, 4, 17);
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: rgb(228, 228, 228);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin: 5rem 0rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 3.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h2 {
+  font-size: 2rem;
+  opacity: 0.8;
+  font-weight: 400;
+  margin: 3rem 0rem 5rem 0rem;
+}
+
+.search-box {
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 10px;
+  min-height: 15vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  background: rgba(6, 8, 34, 0.473);
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+.search-anime label {
+  padding: 0rem 1rem;
+}
+.input-anime {
+  background: rgb(3, 4, 17);
+  outline: none;
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 10px;
+  padding: 0.4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button {
+  font-weight: 700;
+  color: rgb(228, 228, 228);
+  background: rgba(0, 128, 0, 0.568);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.search-button:hover {
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CARD STYLES ---------------------------------*/
+
+.anime-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 4rem 4rem;
+}
+
+.card {
+  position: relative;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.details {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 3px solid rgb(206, 202, 202);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  color: rgb(206, 202, 202);
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+.details:hover {
+  background: rgb(206, 202, 202);
+  color: black;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background: rgb(14, 15, 65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transform: translateX(110%);
+}
+
+.card:hover .details {
+  visibility: visible;
+}
+.card:hover .screen {
+  transform: translateX(0);
 }
