@@ -133,3 +133,9 @@ body {
 .card:hover .screen {
   transform: translateX(0);
 }
+
+/* ----------------------LOADING STYLE -----------------------------*/
+
+h3 {
+  font-size: 3rem;
+}

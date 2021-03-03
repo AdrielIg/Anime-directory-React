@@ -1,8 +1,9 @@
 import React, {useState} from "react"
 import {useLocation} from "wouter"
+import {Link} from "wouter"
 
 
-const Header = (props) => {
+const Header = () => {
     
     const [keyword, setKeyword] = useState("")
     const [path, pushLocation] = useLocation()
@@ -11,7 +12,9 @@ const Header = (props) => {
     const handleSubmit = event => {
         event.preventDefault()
         pushLocation(`/search/${keyword}`)
-        console.log(keyword)
+        
+        
+        
     }
     const handleChange = event => {
         setKeyword(event.target.value)
