@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*----------------- LOADING DETAIL ---------------*/
+.loading-detail {
+  font-size: 3rem;
+}
+.card-detail {
+  border: 2px solid white;
+  min-height: 38rem;
+  border: 1px solid rgb(68, 67, 67);
+  border-radius: 10px;
+  background: rgba(6, 8, 34, 0.473);
+  margin-bottom: 1rem;
+}
+
+.wrapper-general {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.nav-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-detail > a {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background: rgb(82, 87, 161);
+}
+.nav-detail > a:hover {
+  transform: scale(1.1);
+}
+
+.rated-detail > p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 2px solid white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 20px;
+  background: rgb(82, 87, 161);
+}
+
+h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 2.8rem;
+  margin: 2rem 0rem 4rem;
+}
+
+/* --------------------DOWN TITLE ------------------------*/
+
+.wrapper-detail {
+  display: flex;
+  justify-content: space-around;
+}
+.container-img {
+  border-radius: 10px;
+  width: 23rem;
+  height: auto;
+  flex: 1 1 25rem;
+  margin: 0rem 2rem;
+}
+.container-img img {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+  flex: 1 1 25rem;
+}
+
+.container-data h3 {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.synopsis {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.see-more {
+  text-decoration: none;
+  color: rgb(26, 185, 26);
+  text-transform: uppercase;
+}
+
+.container-episodes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.episodes,
+.score,
+.type {
+  border: 1px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  background: rgb(82, 87, 161);
+}
+.see-anime-div {
+  margin-top: 2rem;
+}
+.see-anime {
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid green;
+  border-radius: 10px;
+  margin: 2rem;
+  background: rgba(0, 128, 0, 0.568);
+}
+
+.see-anime-div:hover {
+  transform: scale(1.1);
+}
+
+/*---------------MEDIA QUE-----------------*/
+
+@media screen and (max-width: 720px) {
+  .wrapper-detail {
+    flex-direction: column;
+  }
+  .container-img {
+    align-self: center;
+  }
+  .container-data h3 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-episodes {
+    flex-direction: column;
+  }
+  .episodes,
+  .score,
+  .type {
+    margin: 1rem;
+  }
+}
