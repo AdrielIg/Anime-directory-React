@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {useLocation} from "wouter"
-import {Link} from "wouter"
+
 
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
         <section className="header">
             <div className="welcome">
                 <h1>Welcome to Anime Finder</h1>
-                <h2>Using the <span>Jikan API</span> you can search animes and get some data</h2>
+                <h2>Using the <span>Jikan API(MyAnimeList)</span> you can search animes and get some data</h2>
             </div>
             <div className="search-box">
                 <form className="search-anime" onSubmit={handleSubmit}>

@@ -41,6 +41,7 @@ function ListOfAnimes ({ params }){
            image={singleAnime.image_url}
            url= {`/search/${singleAnime.title}/${singleAnime.mal_id}`}
            key = {singleAnime.title}
+           titulo= {singleAnime.title}
            
            
         />)

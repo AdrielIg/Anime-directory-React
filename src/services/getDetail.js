@@ -1,6 +1,4 @@
-
-
-const apiKey = "25bb06f1dbmsh95003e1c51042adp11afa7jsncdf91a93ac14"
+const apiKey = process.env.REACT_APP_JIKAN_API_KEY;
 
 export default function getAnimes ({title = "shingeki"} = {}) {
    

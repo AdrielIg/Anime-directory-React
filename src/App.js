@@ -7,6 +7,10 @@ import {Route} from "wouter"
 
 import './App.css';
 
+console.log(process.env.NODE_ENV)
+console.log(process.env.REACT_APP_JIKAN_API_KEY)
+
+
 
 
 
