@@ -1,19 +1,18 @@
-import React, {useState, useEffect} from "react" 
-import getAnimes from "../services/getAnimes"
+import React from "react"
 import Anime from "./Anime"
+import {useAnimes} from "../hooks/useAnimes"
 
 
 function ListOfAnimes ({ params }){
 
     const {keyword} = params
-    const [animes, setAnimes ] = useState([])
+    const {loading , animes} = useAnimes({keyword})
+
+    console.log("-")
+
+    /* De esta parte ahora se encarga el hook custom "useAnimes.js*/ 
+    /* const [animes, setAnimes ] = useState([])
     const [loading, setLoading] = useState(false)
-
-
-   
-
-    
-    
 
     useEffect(function () {
         setLoading(true)
@@ -24,7 +23,7 @@ function ListOfAnimes ({ params }){
             
             
         })
-    }, [keyword])
+    }, [keyword]) */
 
    
 
