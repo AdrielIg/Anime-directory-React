@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Link to website: https://anime-directory.netlify.app/
+
+## Description
+_Anime finder using the MyAnimeList API. Developed with React using react router to make a SPA_
+
 ## Available Scripts
 
 In the project directory, you can run:
